@@ -23,7 +23,7 @@ main{
 
 /* rate state start */
 
-.rt-state{
+#rt-state{
     width: 420px;
     height: 420px;
     display: flex;
@@ -64,8 +64,9 @@ main{
     padding: 25px 30px 25px 30px;
 }
 
-.calif p{
+.unselected{
     width: 25px;
+    height: 25px;
     margin: 0;
     padding: 15px;
     border-radius: 40px;
@@ -81,7 +82,7 @@ main{
     cursor: pointer;
 }
 
-.submit{
+#submit{
     border: 0;
     border-radius: 30px;
     margin: 0px 30px 0px 30px;
@@ -92,17 +93,30 @@ main{
     letter-spacing: 3px;
 }
 
-.submit:hover{
+#submit:hover{
     background-color: white;
     color: var(--Orange);
     cursor: pointer;
+}
+
+.selected{
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--Light-Grey);
+    color: white
 }
 
 /* rate state end */
 
 /* Thank you state start */
 
-.ty-state{
+#ty-state{
     width: 420px;
     height: 420px;
     display: flex;
@@ -113,13 +127,13 @@ main{
     border-radius: 30px;
 }
 
-.ty-state img{
+#ty-state img{
     padding-top: 40px;
     width: 187px;
     height: 124px;
 }
 
-.selected{
+.selection{
     margin-top: 30px;
     padding: 7px 15px 7px 15px;
     border-radius: 20px;
@@ -143,6 +157,20 @@ main{
 
 /* Thank you state end */
 
-.hidden{
+#ty-state.hidden{
     display: none;
+}
+
+#rt-state.hidden{
+    display: none;
+}
+
+#attribution{
+    color: white;
+    font-size: 12px;
+}
+
+#attribution a{
+    color: var(--Medium-Grey);
+    font-size: 12px;
 }
