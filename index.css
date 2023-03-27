@@ -58,7 +58,7 @@ main{
     
 }
 
-.calif{
+#calif{
     display: flex;
     justify-content: space-between;
     padding: 25px 30px 25px 30px;
@@ -76,7 +76,7 @@ main{
     text-align: center;
 }
 
-.calif p:hover{
+#calif p:hover{
     background-color: var(--Orange);
     color: white;
     cursor: pointer;
